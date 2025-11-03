@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 | Bitmap & Vector Imagery</title>
+    <!-- Use the same external stylesheet for consistency -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Specific Styles for this Project Page */
+        .project-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project-content h2 {
+            font-size: 2.25rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .component-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (min-width: 768px) {
+            .component-section {
+                grid-template-columns: 2fr 3fr; /* Text (left) and Image (right) */
+            }
+            .component-section.reverse {
+                grid-template-columns: 3fr 2fr; /* Image (left) and Text (right) */
+            }
+        }
+        
+        .design-image {
+            /* Removed background and border since the image will now fill the space */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .design-image img {
+            max-width: 100%; /* Ensures the image scales down on smaller screens */
+            height: auto;
+            border-radius: 4px;
+            display: block; /* Removes any extra space below the image */
+            margin: 0 auto;
+        }
+        /* Removed .placeholder styles as they are no longer needed */
+
+        .design-description h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        .design-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .design-description ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .design-description ul li strong {
+            color: var(--primary-color);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <h1>Project 1: Bitmap & Vector Imagery</h1>
+        <p>Book Cover and Logo Design</p>
+    </header>
+
+    <main class="project-content">
+
+        <!-- Back to Home Link -->
+        <a href="index.html" class="back-link">&larr; Back to E-Portfolio Home</a>
+        
+        <!-- Bitmap Imagery Component: Digital Book Cover -->
+        <section class="card">
+            <h2>Part 1: Digital Book Cover (Bitmap Imagery)</h2>
+            <div class="component-section">
+                
+                <!-- Design Description (Left) -->
+                <div class="design-description">
+                    <h3>Title: KURUKSHETRA: THE BATTLEFIELD WITHIN</h3>
+                    <p><strong>Overall Concept:</strong> The design employs an overpopulated, multi-level montage technique to convey the primary themes of the Mahabharata: the war at large and the internal, ethical struggle (the "Battlefield Within").</p>
+                    
+                    <p><strong>Image Manipulation & Composition Decisions:</strong></p>
+                    <ul>
+                        <li><strong>Primary Focal Image (Center): The Moment of Truth</strong>
+                            <br>A high-resolution depiction of Krishna and Arjuna in the chariot establishes the conflict's philosophical core (the Bhagavad Gita). A medium transparency and a divine blend were applied to create a smoky atmosphere.
+                        </li>
+                        <li><strong>Background Layer (Top and Center-Top): The Eyes of the Observer</strong>
+                            <br>A heavily faded and blurred image of several gods is positioned across the top third of the cover. This layer uses a low opacity and subtle textured filter, symbolizing the vast, detached nature of the war and setting a mood of high drama.
+                        </li>
+                        <li><strong>Secondary Focal Images (Bottom Montage): The Consequences of War</strong>
+                            <br>Three distinct scenes—deceit (dice game), ethical breakdown (court scene), and death of karna—are collaged horizontally across the bottom third. The images are unified through careful color matching and blending with the overall earthy, sepia palette.
+                        </li>
+                    </ul>
+
+                    <p><strong>Text and Typography Decisions:</strong></p>
+                    <ul>
+                        <li><strong>Main Title:</strong> Uses the strong serif font Merriweather combined with a stylized FontFrame technique for a complex visual effect.</li>
+                        <li><strong>Subtitle:</strong> Uses the clean, modern sans-serif font Sunday.</li>
+                    </ul>
+                </div>
+                
+                <!-- Book Cover Image (Right) -->
+                <div class="design-image">
+                    <img src="images/Kurukshetra.jpg" alt="Digital Book Cover for Kurukshetra: The Battlefield Within">
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <hr style="margin: 50px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- Vector Imagery Component: Logo -->
+        <section class="card">
+            <h2>Part 2: Logo Design (Vector Imagery)</h2>
+            <!-- Note: Use 'reverse' class on desktop to put the image on the left -->
+            <div class="component-section reverse">
+                
+                <!-- Logo Image (Left) -->
+                <div class="design-image">
+                    <img src="images/Pawrcels.jpg" alt="PAWRCELS Logo, a vector image featuring a cat, dog, fork, and spoon in a black circle.">
+                </div>
+
+                <!-- Design Description (Right) -->
+                <div class="design-description">
+                    <h3>Logo Name: PAWRCELS</h3>
+                    <p><strong>Primary Shape & Composition:</strong> The Delivery Bubble is the anchor, a large, bold black circular shape created with the Circle tool. This serves as the primary container for the central elements.</p>
+                    
+                    <p><strong>Integrated Animal & Utensil Elements:</strong></p>
+                    <ul>
+                        <li><strong>Cat (Top):</strong> A stylized black cat silhouette is positioned playfully on top of the circle, gazing down. Created using the Bezier/Pen tool and basic shapes.</li>
+                        <li><strong>Dog (Inside Spoon):</strong> A small, faced brown dog face utilizes varied shapes and subtle texture/shading effects for depth, nestled inside the spoon bowl.</li>
+                        <li><strong>Fork and Spoon:</strong> Stylized white fork and spoon are centrally placed. They were created using simple, clean vector shapes (rectangles for tines, ovals for spoon bowl) to ensure scalability.</li>
+                    </ul>
+
+                    <p><strong>Color Palette & Rationale:</strong></p>
+                    <ul>
+                        <li><strong>Monochromatic Base:</strong> Dominant colors are black and white, providing high-contrast, clean, and modern aesthetics essential for versatile branding.</li>
+                        <li><strong>Accent Color:</strong> A warm brown for the dog adds a touch of organic texture.</li>
+                        <li><strong>Rationale:</strong> The limited color palette adheres to best practices for vector logos that require optimal scalability and recognition across different mediums.</li>
+                    </ul>
+                    
+                    <p><strong>Typography:</strong></p>
+                    <ul>
+                        <li><strong>Organization Name:</strong> PAWRCELS uses the Montserrat (geometric sans-serif) typeface, chosen for its clean lines and contemporary feel, placed centrally below the utensils.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2024 Subodh Bhyri. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

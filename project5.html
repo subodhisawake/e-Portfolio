@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 | Educational Video</title>
+    <!-- Use the same external stylesheet for consistency -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght[400;600;700]&display=swap" rel="stylesheet">
+    <style>
+        /* Specific Styles for this Project Page */
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project-content h2 {
+            font-size: 2.25rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .project-content h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .technical-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .technical-list li {
+            background-color: #f4f8ff;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .technical-list li strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <h1>Project 5: Educational Video</h1>
+        <p>"The Caste System: Separating Myth from Reality"</p>
+    </header>
+
+    <main class="project-content">
+
+        <!-- Back to Home Link -->
+        <a href="index.html" class="back-link">&larr; Back to E-Portfolio Home</a>
+        
+        <section class="card">
+            <h2>Live Production</h2>
+            <p>This artistic digital production provides an informational overview of the historical concept of Varna versus the modern reality of Jāti (caste), aiming to clarify common misconceptions within a concise two-minute format.</p>
+            
+            <!-- YouTube Embed Container -->
+            <div class="video-container">
+                <!-- I've used the embed URL format for better display -->
+                <iframe src="https://www.youtube.com/embed/OZLnx3ySIXA" allowfullscreen></iframe>
+            </div>
+
+            <!-- Project Details -->
+            <h2>Detailed Production Manipulations and Technical Requirements</h2>
+            <p>The video was produced using Microsoft Clipchamp and specifically utilized the following techniques to meet all project technical specifications:</p>
+
+            <ul class="technical-list">
+                <li>
+                    <strong>Core Media & Structure</strong>
+                    <p>Utilized 14 high-resolution still images (sourced from Pexels/Unsplash) and two audio tracks: a self-recorded voiceover (narration) and a licensed, lower-volume background music track.</p>
+                </li>
+                <li>
+                    <strong>Visual Effects & Movement (Ken Burns Effect)</strong>
+                    <p>A slow zoom-in (Ken Burns effect) was consistently applied to every single image (14/14). This maintained a uniform, flowing pace and successfully brought life to the still images.</p>
+                </li>
+                <li>
+                    <strong>Transition Effects (Consistency)</strong>
+                    <p>A seamless Cross-Fade transition was used exclusively between every single still image to provide a soft, continuous flow, demonstrating meaningful integration of one consistent transition effect.</p>
+                </li>
+                <li>
+                    <strong>Text and Formal Elements (Captions)</strong>
+                    <p>Captions were added for the entire duration of the video, providing a full transcript of the narration and labeling all on-screen concepts. (This satisfies the requirement for at least two meaningfully integrated captions).</p>
+                </li>
+                <li>
+                    <strong>Duration and Theme</strong>
+                    <p>The final video length is 2:08 mins, fitting within the two-three minute length constraint. The theme, "The Caste System," is consistently embraced throughout the production's visuals and narration.</p>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2024 [Your Full Name]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

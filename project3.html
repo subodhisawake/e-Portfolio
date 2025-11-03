@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 | Drag-n-Drop Assessment</title>
+    <!-- Use the same external stylesheet for consistency -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Specific Styles for this Project Page */
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project-content h2 {
+            font-size: 2.25rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .project-content h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .live-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: var(--accent-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .live-link:hover {
+            background-color: #004d80; /* Darker accent on hover */
+        }
+        .challenge-list li {
+            background-color: #fff3f3;
+            border-left: 5px solid #ff4d4d;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .challenge-list li strong {
+            color: #cc0000;
+        }
+        .solution {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <h1>Project 3: Drag-n-Drop Assessment</h1>
+        <p>Customizing Interactive Assessments for Structural Knowledge</p>
+    </header>
+
+    <main class="project-content">
+
+        <!-- Back to Home Link -->
+        <a href="index.html" class="back-link">&larr; Back to E-Portfolio Home</a>
+        
+        <section class="card">
+            <h2>Project Goal & Overview</h2>
+            <p>This assignment required deconstructing and modifying a functional drag-and-drop script to create a stand-alone assessment tool. The goal was to transform the script's topic and modernize its visual design to demonstrate proficiency in both structural DOM manipulation and CSS responsiveness.</p>
+            
+            <a href="https://drag-puce.vercel.app/" target="_blank" class="live-link">View Live Drag-n-Drop Site (Vercel)</a>
+
+            <!-- Functional Modifications -->
+            <h2>Functional & Thematic Customization</h2>
+            <p>The core logic was preserved while the application's content was completely overhauled:</p>
+            
+            <ul class="list-disc ml-5">
+                <li>
+                    <strong>New Topic:</strong> The original learning theory concepts were replaced with a Football Player Positions theme.
+                </li>
+                <li>
+                    <strong>Assessment Structure:</strong> The application now features three primary position boxes: Forwards, Midfielders, and Defenders.
+                </li>
+                <li>
+                    <strong>Draggable Items:</strong> Famous player names (e.g., Messi, Modrić, van Dijk) were implemented as draggable elements.
+                </li>
+                <li>
+                    <strong>Constraint & Feedback:</strong> Each drop zone accepts a maximum of three items, and the application provides immediate color feedback (green for correct, red for incorrect) upon dropping, preserving the original assessment functionality.
+                </li>
+            </ul>
+
+            <!-- Styling Modifications -->
+            <h2>Visual Redesign: CSS and Responsiveness</h2>
+            <p>The accompanying CSS file was completely reworked to achieve a modern and appealing user interface:</p>
+
+            <ul class="list-disc ml-5">
+                <li>
+                    <strong>Modern Aesthetics:</strong> I introduced a football-themed blue color palette, smoother borders, rounded boxes, and soft shadows to improve visual hierarchy.
+                </li>
+                <li>
+                    <strong>Responsive Layout:</strong> The layout was redesigned using Flexbox to ensure all sections align properly and remain fully responsive across desktop, tablet, and mobile screen sizes. This was a critical step in moving away from the original fixed-width layout.
+                </li>
+                <li>
+                    <strong>Consistency:</strong> Typography, padding, and margins were adjusted for a cleaner, more consistent interface and optimal readability.
+                </li>
+            </ul>
+
+            <!-- Challenges & Lessons Learned -->
+            <h2>Challenges, Troubleshooting, and Technical Growth</h2>
+            <p>This project presented several valuable challenges related to deployment and responsive design:</p>
+
+            <ul class="list-disc ml-5 challenge-list">
+                <li>
+                    <strong>Initial Alignment Issues:</strong> The original code used fixed widths, which caused spacing and alignment problems after introducing new content.
+                    <div class="solution">Solution: I resolved this by switching the container styles to use flexible containers and percentage-based sizing to ensure fluid resizing.</div>
+                </li>
+                <li>
+                    <strong>Vercel 404 Error:</strong> The deployment initially failed with a 404 error because the main entry file was named `drag.html`.
+                    <div class="solution">Solution: I fixed the deployment by renaming the entry file to `index.html`, which Vercel expects as the root file.</div>
+                </li>
+                <li>
+                    <strong>Maintaining Functionality:</strong> Ensuring that the drag-and-drop logic remained intact after structural and stylistic modifications required careful preservation of the original JavaScript event handlers.
+                </li>
+            </ul>
+            
+            <p style="margin-top: 20px;">Overall, this project significantly strengthened my understanding of DOM manipulation, advanced CSS responsiveness, Git version control, and the process of static site deployment using platforms like Vercel.</p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2024 Subodh Bhyri. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
