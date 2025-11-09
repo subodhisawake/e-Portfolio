@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 6 | Animated Scientific Explanation</title>
+    <!-- Use the same external stylesheet for consistency -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght[400;600;700]&display=swap" rel="stylesheet">
+    <style>
+        /* Specific Styles for this Project Page */
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project-content h2 {
+            font-size: 2.25rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .project-content h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .technical-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .technical-list li {
+            background-color: #f4f8ff;
+            border-left: 5px solid var(--secondary-color);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .technical-list li strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        .troubleshooting-box {
+            background-color: #fff8f8;
+            border: 2px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .troubleshooting-box h3 {
+            color: var(--accent-color);
+            border-bottom: none;
+        }
+        .troubleshooting-box p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <h1>Project 6: Animated Scientific Explanation</h1>
+        <p>Illustrating the Enzyme-Substrate Lock-and-Key Model</p>
+    </header>
+
+    <main class="project-content">
+
+        <!-- Back to Home Link -->
+        <a href="index.html" class="back-link">&larr; Back to E-Portfolio Home</a>
+        
+        <section class="card">
+            <h2>Live Animation (15 Seconds)</h2>
+            <p>This project is a concise, 15-second animated scientific explanation created in Adobe Animate, designed to visually communicate the highly specific, rapid, and cyclical nature of Enzyme-Substrate Interaction following the Lock-and-Key Model. The animation utilizes minimal, meaningful text and vector graphics to communicate complex biochemical relationships.</p>
+            
+            <!-- YouTube Embed Container -->
+            <div class="video-container">
+                <!-- Using the embed URL format -->
+                <iframe src="https://www.youtube.com/embed/jvjsy_9Z0BQ" allowfullscreen></iframe>
+            </div>
+
+            <!-- Technical Breakdown -->
+            <h2>Technical & Artistic Manipulations</h2>
+            <p>The animation was constructed to adhere to all minimum technical requirements, with a focus on visually communicating a higher-level cognitive topic.</p>
+
+            <ul class="technical-list">
+                <li>
+                    <strong>Vector Graphics & Color:</strong>
+                    The core assets—the complex, keyhole-shaped Enzyme and the perfectly fitting Substrate—were designed as vector images for scale independence. Meaningful color was essential: the static Enzyme was Blue (constant catalyst), the reactive Substrate was Yellow, and the resulting Products were distinguished with Green and Red.
+                </li>
+                <li>
+                    <strong>Motion Tweening (Movement & Rotation):</strong>
+                    Motion Tweening was used to animate the Substrate moving precisely into the Enzyme's active site. A subtle Rotation Tween was incorporated as the Substrate locked into place, emphasizing the exact structural fit of the reaction.
+                </li>
+                <li>
+                    <strong>Transformation & Transition Effects:</strong>
+                    The catalytic transformation was shown using a blend of effects: the Substrate's shape underwent a Scaling effect to visually represent its breaking apart, and an Alpha Tween (a Fade/Dissolve effect) was simultaneously applied to its color, symbolizing the chemical transformation into the new Product molecules.
+                </li>
+                <li>
+                    <strong>Text and Voice-Over Integration:</strong>
+                    Textual information was kept minimal, limited only to key labels like "Enzyme," "Substrate," and "Products," appearing momentarily. The final video was supported by a pre-scripted voice-over component, which was recorded and synced using a video editor to further explain the on-screen animation content.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Troubleshooting Section -->
+        <section class="card troubleshooting-box">
+            <h2>Troubleshooting Technical Challenges</h2>
+            <p>The most significant technical challenge involved overcoming an export failure from the Adobe Animate trial version.</p>
+            <h3>Solution: Image Sequence Assembly</h3>
+            <p>The animation was successfully exported as an Image Sequence, yielding 459 individual PNG frames. These frames were then imported into Microsoft Clipchamp, a video editor, where they were reassembled to form the final video timeline. This detailed, frame-by-frame approach allowed for the successful integration of the voice-over and captions, ensuring the final deliverable met all technical and quality standards despite the initial software hurdle.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2024 [Your Full Name]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
